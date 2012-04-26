@@ -50,3 +50,4 @@ gem "launchy", ">= 2.1.0", :group => :test
 gem "twitter-bootstrap-rails", ">= 2.0.3", :group => :assets
 gem "simple_form"
 gem "will_paginate", ">= 3.0.3"
+gem "therubyracer"
