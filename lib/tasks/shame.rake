@@ -7,7 +7,7 @@ namespace :shame do
 
     spank_candidates = Twitter.search("eligable")
     spank_candidates.each do |misspelled_tweet|
-      puts "@#{misspelled_tweet.from_user} misspelled 'eligible' #{time_ago_in_words misspelled_tweet.created_at} ago: #{misspelled_tweet.text}"
+      puts "\033[34m@#{misspelled_tweet.from_user}\033[0m misspelled 'eligible' #{time_ago_in_words misspelled_tweet.created_at} ago: #{misspelled_tweet.text}"
     end
     puts "#{spank_candidates.size} people cannot spell 'eligible'"
   end
